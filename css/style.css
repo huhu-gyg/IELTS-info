@@ -1,0 +1,213 @@
+            /*General*/
+
+* {
+    box-sizing: border-box;
+    font-family: "Verdana", Verdana, serif;
+}
+
+/*It applies to main two columns.*/
+.column {
+    float: left;
+    padding: 15px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+            /*Header*/
+
+/*Makes a header fit to what I need*/
+header {
+    background: #e8e8e8;
+    color: #ffffff;
+    padding: 15px;
+    min-height: 104px;
+    float: left;
+    overflow: hidden;
+    width: 100%;
+}
+/*Makes an "IELTS" image look like I need*/
+header img {
+    width: 200px;
+    height: 74px;
+    float: left;
+    margin-top: 0px;
+}
+
+            /*Navigation Top*/
+
+nav{
+    float: right;
+    margin-top: 26px;
+    user-select:none;
+}
+
+nav a{
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    cursor:pointer;
+}
+
+nav li{
+    float: none;
+    display: inline;
+    padding: 0 0px 0 20px;
+}
+
+nav .highlight, 
+nav .current a{
+    color: #c7002b;
+}
+
+nav a:hover{
+    color: #c7002b;
+}
+
+            /*Side navigation*/
+
+.menu {
+    width: 25%;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu ul {
+    list-style-type: none;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    width: 18%;
+    user-select:none;
+}
+.menu li {
+    display: block;
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #e8e8e8;
+    color: #000000;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.menu li:hover,
+.menu a:hover {
+    background-color: #c7002b;
+    color: #ffffff;
+}
+
+#top {
+    margin-top: 40px;
+}
+
+            /*Main content*/
+.content {
+    width: 75%;
+    text-indent: 50px;
+    line-height: 1.8;
+}
+
+.content h3, h4{
+    text-align: center;
+    text-indent: 0px;
+}
+
+strong {
+    color: #c7002b;
+}
+
+            /*ADS*/
+.ads {
+    border: 2px solid #888888;
+    background-color: #e8e8e8;
+    height: 120px;
+    width: 100%;
+    overflow: hidden;
+    float: right;
+    text-align: center;
+    font-size: 2em;
+    text-indent: 0px;
+}
+
+            /*Footer*/
+footer {
+    background-color: #e8e8e8;
+    color: #000000;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.ttt {display: none;}
+           
+            /*For different screens*/
+
+@media(max-width: 950px) {
+    .menu ul {font-size: 0.7em}
+}
+
+@media(max-width: 768px) {
+    * {
+        margin: auto;
+    }
+
+    nav {
+        float: none;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+    .menu {
+        float: left;
+    }
+    .column {
+        width: 100%;
+        margin: auto;
+    }
+    .menu li {
+        text-indent: 0px;
+    }
+    .menu ul {
+        position: relative;
+        width: 100%;
+        font-size: 1em; 
+        text-indent: 0px;
+        margin-left: -20px;
+    }
+    #top {display: none;}
+
+    .ttt {
+    display: block;
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #e8e8e8;
+    color: #000000;
+    border-radius: 10px;
+    cursor:pointer;
+    }
+    .ttt a:link,
+        a:visited {
+        text-decoration: none;
+        color: #000000;
+        border: 3px solid #c7022b;
+        padding: 8px;
+    }
+    .ttt a:hover {
+    background-color: #c7002b;
+    color: #ffffff;
+}
+
+}
