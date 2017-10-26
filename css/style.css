@@ -41,7 +41,6 @@ header img {
 nav{
     float: right;
     margin-top: 26px;
-    user-select:none;
 }
 
 nav a{
@@ -91,7 +90,6 @@ nav a:hover{
     height: 100%;
     overflow: hidden;
     width: 18%;
-    user-select:none;
 }
 .menu li {
     display: block;
