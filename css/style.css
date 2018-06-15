@@ -16,6 +16,16 @@
     display: table;
 }
 
+.column #btn {
+    float: left;
+    padding: 15px;
+}
+.clearfix #btn::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
             /*Header*/
 
 /*Makes a header fit to what I need*/
@@ -80,6 +90,11 @@ nav a:hover{
     text-align: center;
 }
 
+.menu #btn {
+    width: 25%;
+    text-align: center;
+}
+
 .menu a {
     text-decoration: none;
 }
@@ -107,9 +122,6 @@ nav a:hover{
     color: #ffffff;
 }
 
-#top {
-    margin-top: 40px;
-}
 
             /*Main content*/
 .content {
@@ -126,6 +138,29 @@ nav a:hover{
 strong {
     color: #c7002b;
 }
+
+
+          /*TTT Button*/
+#tttBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 100px; 
+    border: none;
+    background-color: #e8e8e8;
+    color: black;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 18%;
+
+}
+
+#tttBtn:hover {
+    background-color: #c7002b;
+    color: #ffffff;
+} 
+
 
             /*ADS*/
 .ads {
