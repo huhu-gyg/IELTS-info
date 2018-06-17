@@ -90,11 +90,6 @@ nav a:hover{
     text-align: center;
 }
 
-.menu #btn {
-    width: 25%;
-    text-align: center;
-}
-
 .menu a {
     text-decoration: none;
 }
@@ -140,27 +135,30 @@ strong {
 }
 
 
-          /*TTT Button*/
+        /*TTT Button*/
 #tttBtn {
-    display: none; 
-    position: fixed; 
-    bottom: 100px; 
+    display: none;
+    position: fixed;
+    left: 65px;
+    bottom: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
     border: none;
     background-color: #e8e8e8;
-    color: black;
-    cursor: pointer;
-    padding: 8px;
     border-radius: 10px;
-    text-decoration: none;
-    width: 18%;
-
+    font-size: 25px;
 }
+
 
 #tttBtn:hover {
     background-color: #c7002b;
     color: #ffffff;
-} 
+}
 
+button:focus {
+    outline: 0;
+}
 
             /*ADS*/
 .ads {
@@ -183,13 +181,13 @@ footer {
     text-align: center;
     width: 100%;
 }
-
-.ttt {display: none;}
-           
+         
             /*For different screens*/
 
 @media(max-width: 950px) {
     .menu ul {font-size: 0.7em}
+    #tttBtn {font-size: 20px}
+    #tttBtn:hover, #tttBtn:active {font-size: 20px}
 }
 
 @media(max-width: 768px) {
@@ -220,27 +218,25 @@ footer {
         text-indent: 0px;
         margin-left: -20px;
     }
-    #top {display: none;}
-
-    .ttt {
-    display: block;
-    padding: 8px;
-    margin-bottom: 8px;
-    background-color: #e8e8e8;
-    color: #000000;
-    border-radius: 10px;
-    cursor:pointer;
+    
+    #tttBtn {
+        display: none;
+        position: fixed;
+        left: 25px;
+        bottom: 50px;
+        /*padding-left: 15px;
+        padding-right: 15px;*/
+        cursor: pointer;
+        border: none;
+        background-color: #e8e8e8;
+        border-radius: 10px;
+        font-size: 20px;
+        opacity: 0.85;
     }
-    .ttt a:link,
-        a:visited {
-        text-decoration: none;
-        color: #000000;
-        border: 3px solid #c7022b;
-        padding: 8px;
+    
+    
+    #tttBtn:hover, #tttBtn:active {
+        background-color: #c7002b;
+        color: #ffffff;
+        opacity: 1;
     }
-    .ttt a:hover {
-    background-color: #c7002b;
-    color: #ffffff;
-}
-
-}
